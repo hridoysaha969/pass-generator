@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator | Coder's Hridoy</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- ====== Dark Theme Button ====== --> 
+    <div class="dark__theme">
+        <span id="moon__icon"></span>
+    </div>
+
+    <!-- ====== Password Generator Section ====== -->
+    <section class="pass__generator">
+        <div class="wrapper">
+            <h1 class="title">Password Generator</h1>
+            <h3 class="password_display" id="passwordDisplay">Password</h3>
+            <form class="password__form" id="passwordGeneratorForm">
+
+                <label for="characterNumber">Number of character</label>
+                <div class="input__range">
+                    <input class="range__input" type="range" min="1" max="30" value="8" id="characterRange">
+                    <input class="number__input" type="number" min="1" max="30" value="8" id="characterNumber">
+                </div>
+
+                <label for="includeUppercase">Include Uppercase</label>
+                <input type="checkbox" name="" id="includeUppercase">
+
+                <label for="includeNumbers">Include Numbers</label>
+                <input type="checkbox" name="" id="includeNumbers">
+
+                <label for="includeSymbols">Include Symbols</label>
+                <input type="checkbox" name="" id="includeSymbols">
+
+                <button class="btn__generate" type="submit">Generate Password</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ====== Password Generator Section ====== -->
+    <footer class="footer__section">
+        <p class="footer__text">Designed & Developed By <a target="_blank" href="https://codershridoy.com">Coder's Hridoy</a></p>
+    </footer>
+    
+    <script src="./js/app.js"></script>
+</body>
+</html>
